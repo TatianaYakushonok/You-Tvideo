@@ -1,3 +1,19 @@
+@font-face {
+  font-family: Inter;
+  src: local('inter-regular'), local('Inter Regular'), url('../fonts/inter-v13-cyrillic_latin-regular.woff2') format('woff2'),
+    url('../fonts/inter-v13-cyrillic_latin-regular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  src: local('inter-bold'), local('Inter Bold'), url('../fonts/inter-v13-cyrillic_latin-900.woff2') format('woff2'),
+    url('../fonts/inter-v13-cyrillic_latin-900.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+}
+
 html {
   position: relative;
   box-sizing: border-box;
@@ -14,14 +30,16 @@ body {
   overflow-x: hidden;
   min-width: 320px;
   min-height: 100vh;
-  font-family: Arial, sans-serif;
+  font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
-  font-size: 16px;
-  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #292d32;
   background-color: #fff;
 }
 
