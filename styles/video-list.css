@@ -1,0 +1,60 @@
+.video-list {
+  padding: 80px 0;
+}
+
+.video-list__title {
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+}
+
+.video-list__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 12px;
+}
+
+.card {
+  position: relative;
+}
+
+.card__thumbnail {
+  margin-bottom: 16px;
+  border-radius: 16px;
+}
+
+.card__title {
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+}
+
+.card__channel {
+  margin-bottom: 12px;
+}
+
+.card__duration {
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+
+.card__favorite {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.card__favorite .star {
+  display: none;
+}
+
+.card__favorite_active .star {
+  display: block;
+}
+
+.card__icon {
+  width: 20px;
+  height: 20px;
+}

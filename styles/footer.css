@@ -1,0 +1,39 @@
+.footer {
+  padding: 49px 0;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  background: url('../img/bg-footer.jpg') center/cover;
+}
+
+.footer__container {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  grid-template-areas: 'logo developer' '. copyright';
+}
+
+.footer__link {
+  grid-row: 1/-1;
+}
+
+.footer__logo {
+  width: 360px;
+  height: 48px;
+  grid-area: logo;
+}
+
+.footer__developers-list {
+  grid-area: developer;
+}
+
+.footer__developers-item {
+}
+
+.footer__developers-link {
+}
+
+.footer__copyright {
+  grid-area: copyright;
+}

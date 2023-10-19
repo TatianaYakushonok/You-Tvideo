@@ -4,25 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
   <title>You-tvideo - Удобный видеохостинг для тебя</title>
 </head>
 
 <body>
   <header class="header">
     <div class="container">
-      <a href="#!" class="header__link">
-        <svg class="header__logo" viewBox="0 0 240 32" role="img"
-          aria-label="Логотип сервиса You-Tvideo">
-          <use xlink:href="./img/sprite.svg#logo-orange"></use>
-        </svg>
-      </a>
+      <div class="header__container">
+        <a href="index.html" class="header__link">
+          <svg class="header__logo" viewBox="0 0 240 32" role="img"
+            aria-label="Логотип сервиса You-Tvideo">
+            <use xlink:href="./img/sprite.svg#logo-orange"></use>
+          </svg>
+        </a>
 
-      <a class="header__link header__link_favorite" href="/favorite.html">
-        <span>Избранное</span>
-        <svg class="header__icon">
-          <use xlink:href="./img/sprite.svg#star-ob"></use>
-        </svg>
-      </a>
+        <a class="header__link header__link_favorite" href="/favorite.html">
+          <span>Избранное</span>
+          <svg class="header__icon">
+            <use xlink:href="./img/sprite.svg#star-ob"></use>
+          </svg>
+        </a>
+      </div>
     </div>
   </header>
 
@@ -50,25 +53,30 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen>
           </iframe>
+        </div>
 
-          <div class="video__content">
-            <a class="video__link video__link_favorite" href="/favorite.html">
-              <span>Избранное</span>
-              <svg class="video__icon">
-                <use xlink:href="./img/sprite.svg#star-ob"></use>
-              </svg>
-            </a>
+        <div class="video__content">
+          <button
+            class="video__link video__link_favorite video__link_favorite_active"
+            href="/favorite.html">
 
-            <h2 class="video__title">Философия Идущего к реке</h2>
-            <p class="video__channel">Правое полушарие интроверта</p>
+            <span class="video__no-favorite">Избранное</span>
+            <span class="video__favorite">В избранном</span>
 
-            <p class="video__info">
-              <span class="video__views">1 575 581 просмотр</span>
-              <span class="video__date">Дата премьеры: 16 авг. 2024 г.</span>
-            </p>
-            <p class="video__description">Смотрите наш курс-саммари «Как
-              понимать философию» фоном.</p>
-          </div>
+            <svg class="video__icon">
+              <use class="star" xlink:href="./img/sprite.svg#star"></use>
+            </svg>
+          </button>
+
+          <h2 class="video__title">Философия Идущего к реке</h2>
+          <p class="video__channel">Правое полушарие интроверта</p>
+
+          <p class="video__info">
+            <span class="video__views">1 575 581 просмотр</span>
+            <span class="video__date">Дата премьеры: 16 авг. 2024 г.</span>
+          </p>
+          <p class="video__description">Смотрите наш курс-саммари «Как
+            понимать философию» фоном.</p>
         </div>
       </div>
     </srction>
@@ -281,6 +289,7 @@
           <use xlink:href="./img/sprite.svg#logo-white"></use>
         </svg>
       </a>
+
       <ul class="footer__developers-list">
         <il class="footer__developers-item">
           Designer: <a href="#!" class="footer__developers-link" target="_blank"

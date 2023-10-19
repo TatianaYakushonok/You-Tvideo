@@ -10,7 +10,7 @@
   font-family: Inter;
   src: local('inter-bold'), local('Inter Bold'), url('../fonts/inter-v13-cyrillic_latin-900.woff2') format('woff2'),
     url('../fonts/inter-v13-cyrillic_latin-900.woff') format('woff');
-  font-weight: 400;
+  font-weight: 900;
   font-display: swap;
 }
 
