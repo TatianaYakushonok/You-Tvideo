@@ -107,7 +107,7 @@ iframe {
   --container-width: 1260px;
   --container-offset: 30px;
   max-width: calc(var(--container-width) + var(--container-offset) * 2);
-  /*padding: 0 var(--container-offset);*/
+  padding: 0 var(--container-offset);
   margin: 0 auto;
 }
 
@@ -125,7 +125,7 @@ iframe {
 
 @media (max-width: 470px) {
   .container {
-    --container-width: 273px;
+    --container-width: 298px;
     --container-offset: 10px;
   }
 }
