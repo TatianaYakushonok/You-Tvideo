@@ -38,8 +38,70 @@
   font-size: 70px;
   font-weight: 900;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .hero__tagline {
   letter-spacing: 0.02em;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 40px 0 58px;
+  }
+
+  .hero__logo {
+    width: 200px;
+    margin-bottom: 45px;
+  }
+
+  .hero__title {
+    margin-bottom: 32px;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-bottom: 70px;
+  }
+
+  .hero__title {
+    font-size: 40px;
+  }
+
+  .hero__link {
+    top: -15px;
+  }
+
+  .hero__link-text {
+    display: none;
+  }
+}
+
+@media (max-width: 470px) {
+  .hero {
+    margin-bottom: 20px;
+    padding: 16px 0 50px;
+  }
+
+  .hero__logo {
+    width: 145px;
+    margin-bottom: 27px;
+    align-self: flex-start;
+  }
+
+  .hero__link {
+    top: 0px;
+  }
+
+  .hero__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .hero__tagline {
+    font-size: 16px;
+  }
 }

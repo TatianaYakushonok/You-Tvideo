@@ -13,6 +13,11 @@
   outline: none;
 }
 
+.search__input::placeholder {
+  color: #292d32;
+  letter-spacing: 0.02em;
+}
+
 .search__btn {
   position: absolute;
   top: 0;

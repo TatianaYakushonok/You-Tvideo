@@ -25,3 +25,9 @@
   width: 20px;
   height: 20px;
 }
+
+@media (max-width: 768px) {
+  .header__link_favorite-text {
+    display: none;
+  }
+}

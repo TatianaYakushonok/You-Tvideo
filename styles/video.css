@@ -1,5 +1,5 @@
 .video {
-  padding: 80px 0 0;
+  padding-top: 80px;
 }
 
 .video__player {
@@ -65,4 +65,52 @@
 
 .video__channel {
   margin-bottom: 40px;
+}
+
+@media (max-width: 1024px) {
+  .video {
+    padding-top: 60px;
+  }
+
+  .video__content {
+    font-size: 20px;
+  }
+
+  .video__title {
+    font-size: 32px;
+  }
+
+  .video__channel {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video__player {
+    margin-bottom: 68px;
+  }
+
+  .video__link_favorite {
+    top: -40px;
+    left: 0;
+  }
+}
+
+@media (max-width: 470px) {
+  .video {
+    padding-top: 40px;
+  }
+
+  .video__title {
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+
+  .video__content {
+    font-size: 16px;
+  }
+
+  .video__channel {
+    margin-bottom: 20px;
+  }
 }
