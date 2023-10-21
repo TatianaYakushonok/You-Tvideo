@@ -41,6 +41,12 @@ body {
   line-height: 1.2;
   color: #292d32;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
 }
 
 img,
@@ -125,7 +131,6 @@ iframe {
 
 @media (max-width: 470px) {
   .container {
-    --container-width: 298px;
-    --container-offset: 10px;
+    --container-offset: 11px;
   }
 }
